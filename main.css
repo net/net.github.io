@@ -1,0 +1,79 @@
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;  
+}
+
+header {
+  height: 200px;
+  background-color: rgb(238, 195, 21);
+  border-bottom: 14px solid rgb(202, 160, 4);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(120, 120, 120);
+}
+
+.logo {
+  margin-top: 42px;
+  margin-left: 40px;
+  height: 120px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.3em;
+  margin-right: 25px;
+}
+
+a.download {
+  border: 5px solid black;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.3em;
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+a.download:hover {
+  background-color: black;
+  color: white;
+}
+
+.main-container {
+  margin: 50px 51px 20px;
+}
+
+.button {
+  background-color: rgb(238, 195, 21);
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button.small {
+  font-size: 1.1em;
+  padding: 8px;
+}
+
+.button.block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.box {
+  border: 5px solid rgb(238, 195, 21);
+  padding: 10px;
+  margin-bottom: 10px;
+}

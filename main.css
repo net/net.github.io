@@ -88,3 +88,16 @@ a.download:hover {
   padding: 10px;
   margin-bottom: 10px;
 }
+
+.post.tweet {
+  color:darkgray;
+  font-size:1em;
+  font-weight:600;
+  text-align:left;
+  margin-bottom:10px;
+  float:right;
+}
+
+.post.tweet:hover {
+  color: rgb(72, 151, 173);
+}

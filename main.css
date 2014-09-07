@@ -6,6 +6,8 @@ body {
 header {
   height: 200px;
   background-color: rgb(238, 195, 21);
+  background-image: url('sponge.jpg');
+  background-repeat: repeat-x;
   border-bottom: 14px solid rgb(202, 160, 4);
 }
 
@@ -47,7 +49,7 @@ a.download:hover {
 }
 
 .main-container {
-  margin: 50px 51px 20px;
+  margin: 10px 51px 20px;
 }
 
 .button {
@@ -60,6 +62,15 @@ a.download:hover {
   font-size: 1.3em;
   text-align: center;
   text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: rgb(220, 180, 19);;
+  transition: background-color 0.2s;
+}
+
+.button:active {
+  background-color: rgb(200, 164, 18);
 }
 
 .button.small {

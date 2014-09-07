@@ -9,6 +9,13 @@ header {
   background-image: url('sponge.jpg');
   background-repeat: repeat-x;
   border-bottom: 14px solid rgb(202, 160, 4);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+header .main-container {
+  width: 1180px;
+  margin: 0 auto;
 }
 
 a {
@@ -18,7 +25,7 @@ a {
 
 .logo {
   margin-top: 42px;
-  margin-left: 40px;
+  margin-left: -10px;
   height: 120px;
 }
 
@@ -49,7 +56,8 @@ a.download:hover {
 }
 
 .main-container {
-  margin: 10px 51px 20px;
+  width: 1180px;
+  margin: 0 auto;
 }
 
 .button {

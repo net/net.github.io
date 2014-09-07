@@ -197,14 +197,20 @@ a.download:hover.tooltips span {
 }
 
 .post.tweet {
-  color:darkgray;
   font-size:1em;
   font-weight:600;
   text-align:left;
-  margin-bottom:10px;
+  margin-bottom:6px;
   float:right;
+  color: rgb(5, 176, 243);
+  padding: 2px 10px;
 }
 
 .post.tweet:hover {
-  color: rgb(72, 151, 173);
+  color: white;
+  background-color: rgb(5, 176, 243);
+}
+
+.post.tweet:active {
+  background-color: rgb(4, 129, 178);
 }

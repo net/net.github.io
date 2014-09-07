@@ -81,6 +81,15 @@ header a {
   font-weight: 800;
   font-size: 1.3em;
   margin-right: 25px;
+  border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+header a:hover:not(.download) {
+  border-bottom-style: solid;
+  border-bottom-color: #000;
+  border-bottom-width: 3px;
+  padding-bottom: 1px;
+  transition: border-bottom-color 0.3s;
 }
 
 a.download {

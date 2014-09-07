@@ -13,9 +13,54 @@ header {
   padding-right: 50px;
 }
 
-header .main-container {
-  width: 1180px;
-  margin: 0 auto;
+@media (min-width: 1279px) {
+
+  header .main-container {
+    width: 1180px;
+    margin: 0 auto;
+  }
+
+  .main-container {
+    width: 1180px;
+    margin: 0 auto;
+  }
+
+  .left-column {
+    width: 873px;
+    float: left;
+  }
+
+  .right-column {
+    margin-left: 36px;
+    width: 271px;
+    float: left;
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  header .main-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .main-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .left-column {
+    width: 74%;
+    float: left;
+  }
+
+  .right-column {
+    margin-left: 3%;
+    width: 23%;
+    float:left;
+  }
+
 }
 
 a {
@@ -53,11 +98,6 @@ a.download {
 a.download:hover {
   background-color: black;
   color: white;
-}
-
-.main-container {
-  width: 1180px;
-  margin: 0 auto;
 }
 
 .button {

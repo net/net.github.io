@@ -6,14 +6,33 @@
   * Please don't look at the code, it was hurriedly put together and is
   * certainly not the best I can do.
   *
-  * The logo was created by Remixz on IRC
+  * The logo was created by talons1337 / nod3rator on IRC
   *
   -->
 
   <head>
     <link href="main.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
-    <title>Sponge: A Minecraft Server Mod</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Sponge: An Open Source Minecraft Server</title>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          var s = $("#sticker");
+          var w = $("#water");
+          var pos = s.position();                    
+          $(window).scroll(function() {
+              var windowpos = $(window).scrollTop();
+              if (windowpos >= pos.top) {
+                  s.addClass("stick");
+                  w.addClass("stick-water");
+              } else {
+                  s.removeClass("stick");
+                  w.removeClass("stick-water");
+              }
+          });
+      });
+    </script>
   </head>
 
   <body>
@@ -22,15 +41,16 @@
 
       <div class="main-container">
 
-        <img class="logo" src="logo-transparent.png"/>
 
-        <div style="text-align:right;margin-top:-54px;">
+        <a class="header-logo" href="#" style="background-image:url(logo2-transparent.png);margin-top:42px;margin-left: -10px;background-size: 120px 120px;display:inline-block;font-weight:800;font-size:3.5em;background-repeat:no-repeat;padding-left:130px;padding-top:30px;padding-bottom:20px;line-height:30px;"><span style="color: rgba(0, 0, 0, 0.67);">SPONGE</span><br><span style="font-weight:300;font-size:0.4em;">An Open Source Server</span></a>
+
+        <div style="text-align:right;margin-top:-47px;">
           
           <a href="#">FORUMS</a>
           <a href="#">PLUGINS</a>
-          <a href="#">WIKI</a>
+          <a href="#">DOCS</a>
 
-          <a class="download tooltips" href="#">DOWNLOAD BETA<span>The is a <strong style="font-weight:400;">beta</strong> release for <strong style="font-weight:400;text-decoration:underline;">experienced users only</strong>. It could crash your server and corrupt your world! It is not intended for use on production servers. <strong style="font-weight:400;">Use with caution.</strong></span></a>
+          <a class="download tooltips" href="#">DOWNLOAD BETA<span>This is a <strong style="font-weight:400;">beta</strong> release for <strong style="font-weight:400;text-decoration:underline;">experienced users only</strong>. It could crash your server and corrupt your world! It is not intended for use on production servers. <strong style="font-weight:400;">Use with caution.</strong></span></a>
 
         </div>
 
@@ -38,24 +58,33 @@
 
     </header>
     
-    <div style="height:50px;background-image: url('water.png');background-repeat: repeat-x;background-position: -140px -15px;margin-bottom:10px;"></div>
+    <div id="sticker"></div>
+
+    <div id="water" style="height:50px;background-image: url('water.png');background-repeat: repeat-x;background-position: -140px -2px;margin-bottom:10px;position:relative;margin-top: -10px;"></div>
 
     <div class="main-container">
-      
+
       <div class="left-column">
+
         <div class="box">
-        
-          <div style="font-weight:800;font-size:1.6em;text-align:center;margin-bottom:5px;text-transform: uppercase;background-color: rgb(238, 195, 21);margin-left:-10px;margin-right:-10px;margin-top:-10px;padding-top:9px;padding-bottom:14px;margin-bottom:10px;">Development Starts</div>
-          
-          <span style="color:darkgray;font-size:1em;font-weight:600;text-align:left;float:left;padding: 2px 0;">POSTED YESTERDAY by sk89q</span>
-          <a href="#" class="post tweet">TWEET</a>
-          <div style="clear:both;"></div>
+
+          <div style="font-weight:800;font-size:1.6em;text-align:center;margin-bottom:5px;text-transform: uppercase;background-color: rgb(238, 195, 21);margin-left:-10px;margin-right:-10px;margin-top:-10px;padding-top:9px;padding-bottom:14px;margin-bottom:10px;">What is Sponge?</div>
 
           <div>
 
-            <p>Greetings! I am happy to announce we have officially started development on Sponge. You can view the project and contribute over on <a class="link" href="https://github.com">GitHub</a>. Kitty ipsum dolor sit amet, stretching claw tail flick bat leap sleep in the sink, stretching run biting lay down in your way. Hairball kittens sleep on your face rip the couch, sniff chase the red dot sleep on your face bat stretching toss the mousie tail flick. Sleep on your face puking meow run, puking puking knock over the lamp toss the mousie litter box catnip stretching eat.</p>
+            <p style="font-size:1.1em;text-align:center;color:#373737;padding-top:40px;padding-bottom:30px;">Discription of sponge and how it works.<br><br>Perhaps a diagram or two, something that isn't just text.</p>
 
-            <p>Rip the couch catnip hiss attack your ankles attack your ankles shed everywhere, catnip catnip tail flick knock over the lamp. Feed me climb the curtains sleep on your keyboard sniff hiss jump, stretching toss the mousie jump on the table zzz. Purr tail flick litter box stuck in a tree puking stuck in a tree, sniff jump sunbathe tail flick jump chuf.</p>
+          </div>
+          
+        </div>
+
+        <div class="box">
+
+          <div style="font-weight:800;font-size:1.6em;text-align:center;margin-bottom:5px;text-transform: uppercase;background-color: rgb(238, 195, 21);margin-left:-10px;margin-right:-10px;margin-top:-10px;padding-top:9px;padding-bottom:14px;margin-bottom:10px;">The Plan</div>
+
+          <div>
+
+            <p style="font-size:1.1em;text-align:center;color:#373737;padding-top:40px;padding-bottom:30px;">The plan for development of Sponge.<br><br>Information on how to get involved including links to GitHub.</p>
 
           </div>
           
@@ -63,7 +92,7 @@
 
         <div class="box">
         
-          <div style="font-weight:800;font-size:1.6em;text-align:center;margin-bottom:5px;text-transform: uppercase;background-color: rgb(238, 195, 21);margin-left:-10px;margin-right:-10px;margin-top:-10px;padding-top:9px;padding-bottom:14px;margin-bottom:10px;">The Plan for Sponge</div>
+          <div style="font-weight:800;font-size:1.6em;text-align:center;margin-bottom:5px;text-transform: uppercase;background-color: rgb(238, 195, 21);margin-left:-10px;margin-right:-10px;margin-top:-10px;padding-top:9px;padding-bottom:14px;margin-bottom:10px;">Example Post: Development Started</div>
           
           <span style="color:darkgray;font-size:1em;font-weight:600;text-align:left;float:left;padding: 2px 0;">POSTED TWO DAYS AGO by sk89q</span>
           <a href="#" class="post tweet">TWEET</a>
@@ -93,9 +122,9 @@
           <div style="font-weight:800;font-size:2em;color:rgb(202, 160, 4);margin-bottom:5px;">0.1.34.5</div>
           <span style="color:darkgray;font-size:0.8em;">RELEASED ONE HOUR AGO</span>
 
-          <div style="font-size:1em;margin-bottom:10px;">
+          <div style="font-size:0.95em;margin-bottom:10px;">
 
-            <p>No longer spawns TNT on server start. Wolves are now tameable in creative. New <span style="color:rgb(202, 160, 4);">/help</span> command for displaying commands of various plugins.</p>
+            <p style="font-size:0.95em;">No longer spawns TNT on server start. Wolves are now tameable in creative. New <span style="color:rgb(202, 160, 4);">/help</span> command for listing commands of various plugins.</p>
             <div style="font-size:1.2em">
               <span style="font-weight:800">ADDED</span> 1 FEATURE<br>
               <span style="font-weight:800">FIXED</span> 5 BUGS<br>
@@ -106,6 +135,21 @@
           <a href="#" class="button small" style="display:block;">COMPLETE CHANGELOG</a>          
 
         </div>
+
+      </div>
+
+      <div style="clear:both;"></div>
+
+
+    </div>
+
+    <div class="footer">
+    
+      <div class="main-container" style="text-align:right;font-size:1.1em;padding-top:20px;font-weight:300;line-height:32px;">
+
+        Copyright 2014 SpongeMC.org<br>
+        <a href="#" style="color:black;text-decoration:underline;">Terms of Service</a> | <a href="#" style="color:black;text-decoration:underline;">Privacy Policy</a><br>
+        Code licensed under <a style="color:black;text-decoration:underline;" href="http://opensource.org/licenses/MIT">MIT</a>
 
       </div>
 

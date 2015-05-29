@@ -1,4 +1,4 @@
-inety.github.io
+net.github.io
 ===============
 
 Example Website
